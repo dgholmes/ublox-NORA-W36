@@ -2,7 +2,7 @@ import time
 import serial
 import random
 
-SERIAL_PORT = "COM25"
+SERIAL_PORT = "COM33"
 BAUD_RATE = 115200
 
 try:

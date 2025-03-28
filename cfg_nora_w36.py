@@ -13,7 +13,7 @@ def send_command(ser, command, wait_time=0.5):
     else:
         time.sleep(wait_time)  # Allow time for response
     response = ser.read_all().decode(errors='ignore').strip()
-    print(f"Response: {response}\n")
+    print(f"Response: {response}")
     return response
 
 
@@ -78,7 +78,7 @@ def execute_commands(ser, commands):
 
 
 def main():
-    port = "COM25"  # Change to your actual port (e.g., "/dev/ttyUSB0" on Linux)
+    port = "COM31"  # Change to your actual port (e.g., "/dev/ttyUSB0" on Linux)
     baudrate = 115200  # Adjust based on device specifications
 
     try:
